@@ -4,13 +4,13 @@
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miguel Arellano - Portafolio</title>
-  <link rel="stylesheet" href="Static/style.css" />  <!--Se usa cuando SOLO estamos usando HTML y CSS, en Github es necesario quitar los "../" de href-->
+  <link rel="stylesheet" href="Static/style.css" />  <!--Se usa cuando SOLO estamos usando HTML y CSS-->
   
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
-  <!-- Fuerzo build -->
+  
 </head>
   <body>
-  <!-- Navbar -->
+  <!--------------------------------- Navbar --------------------------->
   <header class="navbar">
     <div class="container nav-content">
       <h1 class="logo">Miguel Arellano</h1>
@@ -19,22 +19,23 @@
         <a href="#habilidades">Skills</a>
         <a href="#proyectos">Projects</a>
         <a href="#certificaciones">Certifications</a>
-        <a href="#experiencia">Experience</a>
+        <a href="#experience">Experience</a>
         <a href="#contacto">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Sobre Mí -->
+  <!--------------------------- About me  ---------------------------->
   <section id="sobre-mi" class="section">
     <h2 class="section-title">About Me</h2>
     <div class="divider"></div>   
-    <!--   <p class="description">
-      Soy un <strong>desarrollador de software</strong> con enfoque en <em>soluciones digitales eficientes y escalables</em>. Me apasiona el <em>código limpio y optimizado</em>, siempre explorando nuevas tecnologías para mejorar la experiencia del usuario.
-    </p>   -->
+    <!-- UPD CAMBIO EN description -->
     <p class="description">
-      I am a <strong>Mechatronics Engineer</strong> passioned for software development and <em>efficient digital solutions and scalables</em>. Me apasiona el <em>código limpio y optimizado</em>, siempre explorando nuevas tecnologías para mejorar la experiencia del usuario.
+      As a <strong>Mechatronics Engineer</strong> with a Specialization in <strong>Software Development</strong>
+       by Universidad Panamericana, I thrive on creating <em> powerful, scalable digital solutions that make a real impact</em>.
+        My goal is to craft seamless user experiences while building software that stands the test of time.
     </p>
+    <!-- UPD CAMBIO EN description -->
     <a href="https://drive.google.com/file/d/1uFSD48ajEgnOmC3za0abOgsug4pf2l6C/view?usp=sharing" 
     class="download-btn"
     target="_blank" >
@@ -42,18 +43,18 @@
     </a>
   </section>
 
-  <!-- Habilidades -->
+  <!---------------------------------- Skills -------------------------->
   <section id="habilidades" class="section">
     <h2 class="section-title">Skills</h2>
     <div class="divider"></div>
-    <p class="description">Descubre mis competencias técnicas y las herramientas que manejo (set the mouse over the green bar).</p>
+    <p class="description">Discover my technical habilities and the tools that I use in my projects (set the mouse over the green bar).</p>
 
     <div class="grid-container">
 
       <div class="card selected">
-        <img src="material/HTML5.png" >
+        <img src="../material/HTML5.png" >
         <h2>HTML</h2>
-        <p>Desarrollo web con HTML5, semántica y accesibilidad.</p>
+        <p>Web development with HTML5.</p>
         <!-- Barra de progreso -->
           <div class="progress-container">
             <div class="progress-bar" style="width: 80%;">
@@ -63,9 +64,9 @@
       </div>
       
       <div class="card selected">
-        <img src="material/CSS.png" alt="CSS">
+        <img src="../material/CSS.png" alt="CSS">
         <h2>CSS</h2>
-        <p>Estilos avanzados con CSS3, Flexbox, Grid y animaciones.</p>
+        <p>Advanced styles with CSS3, Flexbox, Grid and animations.</p>
         <!-- Barra de progreso -->
         <div class="progress-container">
           <div class="progress-bar" style="width: 50%;">
@@ -75,9 +76,9 @@
       </div>
       
       <div class="card selected">
-        <img src="material/js.png" alt="JavaScript">
+        <img src="../material/js.png" alt="JavaScript">
         <h2>JavaScript</h2>
-        <p>Programación interactiva con ES6+, DOM y APIs modernas.</p>
+        <p>Interactive programming with ES6+, DOM and modern APIs.</p>
         <!-- Barra de progreso -->
         <div class="progress-container">
           <div class="progress-bar" style="width: 30%;">
@@ -87,9 +88,9 @@
       </div>
 
       <div class="card selected">
-        <img src="material/java.png" alt="Java">
+        <img src="..//material/java.png" alt="Java">
         <h2>Java</h2>
-        <p>Lenguaje de ...</p>
+        <p>Object-oriented web development, with focus on backend logic.  </p>
         <!-- Barra de progreso -->
         <div class="progress-container">
           <div class="progress-bar" style="width: 90%;">
@@ -99,9 +100,9 @@
       </div>
 
       <div class="card selected">
-        <img src="material/Python.png" alt="Python">
+        <img src="..//material/Python.png" alt="Python">
         <h2>Python</h2>
-        <p>Automatización, análisis de datos y scripting.</p>
+        <p>Automation, data analysis and scripting.</p>
         <!-- Barra de progreso -->
         <div class="progress-container">
           <div class="progress-bar" style="width: 70%;">
@@ -111,57 +112,48 @@
       </div>
 
       <div class="card selected">
-        <img src="material/mysql.png" alt="MySQL">
+        <img src="..//material/mysql.png" alt="MySQL">
         <h2>MySQL</h2>
-        <p>Gestión de bases de datos relacionales y NoSQL.</p>
-        <!-- Barra de progreso -->
+        <p>Managment of relational data bases.</p>
+        <!-- Progress bar -->
         <div class="progress-container">
           <div class="progress-bar" style="width: 70%;">
             <span class="tooltip-text">70%</span>
-          </div> <!-- Cambia el % según tu nivel -->  
+          </div> <!-- Change the % respect your level -->  
         </div>
       </div>
 
       <div class="card selected">
-        <img src="material/Cybersecurity.png" alt="Cibersecurity">
+        <img src="../material/Cybersecurity.png" alt="Cibersecurity">
         <h2>Cibersecurity</h2>
-        <p>Desarrollo web robusto y creación de APIs con Laravel.</p>
-         <!-- Barra de progreso -->
+        <p>Robust web development.</p>
+         <!-- Progress bar -->
          <div class="progress-container">
           <div class="progress-bar" style="width: 20%;">
             <span class="tooltip-text">20%</span>
-          </div> <!-- Cambia el % según tu nivel -->  
+          </div> <!-- Change the % respect your level -->  
         </div>
       </div>
 
-      <div class="card">
-        <img src="node-icon.png" alt="Node.js">
-        <h2>Node.js</h2>
-        <p>Desarrollo backend eficiente con Express y APIs RESTful.</p>
-      </div>
-
-      <div class="card selected">
-        <img src="php-icon.png" alt="PHP & Laravel">
-        <h2>PHP & Laravel</h2>
-        <p>Desarrollo web robusto y creación de APIs con Laravel.</p>
-      </div>
+      <!-- UPD CAMBIO: Se borraron los ultimos 3 mosaicos  -->
 
     </div>
 
   </section>
  
-   <!-- Proyectos -->
+   <!------------------------- Proyectos ---------------------------->
    <section id="proyectos" class="section">
     <h2 class="section-title">Projects</h2>
     <div class="divider"></div>
 
     <div class="grid-container">
       <div class="card">
-        <img src="" alt="inmo project" >
+        <img src="..//material/arellano.png" alt="inmo project" >
         <h2>ARYCO</h2>
         <p>Pagina web especializada en la promoción y venta de inmuebles .</p>
         <a href="#" class="download-btn">
-          <span class="icon">⬇</span> Abrir proyecto
+            <!-- UPD CAMBIO en la palabra proximamente -->
+          <span class="icon">⬇</span> Proximamente
         </a>
       </div>
 
@@ -170,56 +162,97 @@
         <h2>CIBERAPP WAZUH</h2>
         <p>Aplicación especializada para la ciberseguirdad de los equipos.</p>
         <a href="#" class="download-btn">
-          <span class="icon">⬇</span> Abrir proyecto
+            <!-- UPD CAMBIO en la palabra proximamente -->
+          <span class="icon">⬇</span> Proximamente 
         </a>
       </div>
 
   </section>
 
-  <!-- Certificaciones -->
+  <!--------------------------- Certificaciones ---------------------->
   <section id="certificaciones" class="section">
-    <h2 class="section-title">Certificaciones</h2>
+    <h2 class="section-title">Certifications</h2>
     <div class="divider"></div>
   
     <div class="grid-container">
+
       <div class="certify">
-        <img src="material/scrumCertif.jpg" alt="Scrum Fundamentals Certified">
+        <img src="..//material/SAPSP.png" alt="SAP Certificacion">
+        <h3>SAP Cetification</h3>
+        <p>Certification in SAP S/4HANA Cloud private edition, Sourcing and Procurement.</p>
+      </div>
+
+      <div class="certify">
+        <img src="../material/UPlogo.png" alt="Especialidad UP">
+        <h3>Specialization in Engineering and Quality for Software Projects</h3>
+        <p>Specialization in web technologies, Quality and Cibersecurity methodologies.</p>
+      </div>
+
+      <div class="certify">
+        <img src="../material/scrumCertif.jpg" alt="Scrum Fundamentals Certified">
         <h3>Scrum Fundamentals Certified</h3>
         <p>Certification in Scrum fundamentals.</p>
       </div>
   
       <div class="certify">
-        <img src="material/Cybersecurity.png" alt="Universidad Panamericana">
+        <img src="../material/UPlogo.png" alt="Universidad Panamericana">
         <h3>Universidad Panamericana</h3>
         <p>Certification as Mechatronics Engineering in Universidad Panamericana campus bonaterra.</p>
       </div>
   
-      <div class="certify">
-        <img src="material/mysql.png" alt="Otra Certificación">
-        <h3>Specialization in Engineering and Quality for Software Projects</h3>
-        <p>Specialization in web technologies and different methodologies from agile to Cibersecurity.</p>
-      </div>
+
+   </div>
+  </section>
+
+  <!----------------------------- Experiencia --------------------------->
+ <section id="experience" class="section">
+  <h2 class="section-title">Experience</h2>
+  <div class="divider"></div>
+  <p class="description">Knows the path my professional life has taken.</p>
+
+  <div class="timeline">
+
+  
+ 
+    <div class="timeline-event left">
+      <div class="date"> 01 - 2019 🎓</div>
+      <div class="tooltip">Start of University career in Mechatronics Engineering (01/2019 - 06/2024).</div>
     </div>
 
-    <div class="certify">
-      <img src="" alt="Otra Certificación">
-      <h3>Otra Certificación</h3>
-      <p>Especialización en dirección de equipos.</p>
+    <div class="timeline-event right">
+      <div class="date">08 - 2023 🛰️</div>
+      <div class="tooltip">Internship in Samara National Rsearch University, for developing of a Cubesat as developer and in electronics department (08/2023 - 09/2023).</div>
     </div>
+
+    <div class="timeline-event left">
+      <div class="date">10 - 2023 🚗</div>
+      <div class="tooltip">First job as Manufacturing engineer in MATA AUTOMOTIVE where my main taks was to make the production lines more efficient with tech implementations and updated documentation for big custormers, but also automate machines like robots. (10/2023 - 10/2024)</div>
+    </div>
+
+    <div class="timeline-event right">
+      <div class="date">07 - 2024 🎓</div>
+      <div class="tooltip">Start of Specialization in Engineering and Quality for Software projects (07/2024 - 05/2025).</div>
+    </div>
+
+    <div class="timeline-event left">
+      <div class="date">09 - 2024 💻🏘️</div>
+      <div class="tooltip">Start of the start-up "ARYCO" a digital real state broker for smoother interactions and a smarter workflow.</div>
+    </div>
+
+    <div class="timeline-event right">
+      <div class="date">05 - 2025 💻</div>
+      <div class="tooltip">First IT job in CAPGEMINI México as Sr SAP PTP Analyst.</div>
+    </div>
+
   </div>
-  </section>
 
-  <!-- Experiencia -->
-  <section id="experiencia" class="section">
-    <h2 class="section-title">Experience</h2>
-    <div class="divider"></div>
+</section>
 
-  </section>
-
-  <!-- Contactos -->
+  <!-------------------------------- Contactos ------------------------------->
   <section id="contacto" class="contact-form">
     <h2 class="section-title">Contact</h2>
     <div class="divider"></div>
+
     <!--
     <form>
       <label for="name">Nombre</label>
@@ -257,6 +290,5 @@
 
 </body>
 </html>
-
 
 
