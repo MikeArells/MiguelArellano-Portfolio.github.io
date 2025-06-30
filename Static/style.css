@@ -24,10 +24,9 @@
     color: inherit;
   }
   
-  /* Navbar */
+  /* Navbar start*/
   .navbar {
-    /*UPD CAMBIO a negro*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(40, 33, 33);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -43,6 +42,8 @@
     align-items: center;
   }
   
+/* logo "Miguel Arellano*/
+
   .logo {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.75rem;
@@ -58,7 +59,8 @@
   .menu a:hover {
     color: #2875d9; /* Tailwind green-600 */
   }
-  
+  /* Navbar end*/
+
   /* Sections */
   .section {
     padding: 4rem 1rem;
@@ -112,16 +114,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 4rem;    /*separacion entre cuadros*/
+    
   }
   
   .card {
-    /*UPD CAMBIO background a negro*/
-    background: rgb(29, 27, 27);
+    /*color de las tarjetas*/
+    background: rgb(36, 34, 34);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(16, 16, 16, 0.1);
     transition: transform 0.2s;
+     
   }
   
   .card:hover {
@@ -129,8 +133,13 @@
   }
   
   .card img {
+    /*
     width: 70px;
     margin-bottom: 1rem;
+    */
+        
+    max-height: 70px; /* Ajusta este valor si es necesario */
+    
   }
   
   .card h2 {
@@ -139,13 +148,18 @@
   }
   
   .card p {
-    color: #555;
+    color: #d6d1d1;
     font-size: 0.95rem;
+     
   }
 
-  /*Images certified*/
+  /*----------------------Images certified ---------------------------*/
+  .certify p {
+  margin-top: 0.75rem; /* o 1rem si prefieres más separación */
+  }
+  
   .certify {
-    background: white;
+    background: rgb(36, 34, 34);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -165,13 +179,13 @@
    /*----------------------------------------------*/
 
   .selected:hover {
-    border-top: 5px solid #e74c3c;
+    border-top: 5px solid #f0210a;
   }
 
   .progress-container {
     width: 100%;
     height: 10px;
-    background-color: #e0e0e0;
+    background-color: #e5e5e5;
     border-radius: 5px;
     margin-top: 1rem;
     overflow: visible;
@@ -192,7 +206,7 @@
         top: -28px;
         right: 0;
         background: #27ae60;
-        color: white;
+        color: rgb(214, 214, 214);
         padding: 3px 6px;
         border-radius: 4px;
         font-size: 0.75rem;
@@ -205,6 +219,102 @@
   .progress-bar:hover .tooltip-text {
     opacity: 1;
   }
+
+/*----------------LINEA DE TIEMPO-----------------------*/
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff33 95%, transparent 95%);
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) ;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 14px solid #ffffff33; /* Color de la flecha */
+}
+
+
+.timeline-event {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+
+.timeline-event.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-event.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-event .date {
+  background-color: #1e1e1e;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.timeline-event .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  background-color: #444;
+  color: #eee;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.75rem;
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-event.left .tooltip {
+  right: 110%;
+}
+
+.timeline-event.right .tooltip {
+  left: 110%;
+}
+
+.timeline-event .date:hover + .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+/*-----------------------------------------*/
+
 
   /* Tooltip *//*
 .progress-bar::after {
@@ -240,7 +350,7 @@
 */
 /*Contacto*/
 .contact-form {
-  background: white;
+  background: rgb(255, 255, 255);
   max-width: 600px;
   margin: 4rem auto;
   padding: 2rem;
@@ -256,14 +366,14 @@
 .contact-form label {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #333;
+  color: #202020;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #101010;
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
@@ -273,7 +383,7 @@
 .contact-form textarea:focus {
   outline: none;
   border-color: #2289c5;
-  box-shadow: 0 0 0 2px rgba(34, 137, 197, 0.2);
+  box-shadow: 0 0 0 2px rgba(13, 146, 222, 0.2);
 }
 
 .contact-form button {
@@ -290,12 +400,8 @@
 }
 
 .contact-form button:hover {
-  background-color: #1a3c64;
+  background-color: #2072cf;
 }
 
 
-
-.contact-form button:hover {
-  background-color: #1a3c64;
-}
 
